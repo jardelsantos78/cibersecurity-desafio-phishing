@@ -23,11 +23,11 @@ Para realizar o teste, você precisará de acesso de administrador (root) do Kal
 **2. Executando a ferramenta SET Toolkit**  
 Essa ferramenta open source serve para auxiliar os profissionais de segurança a realizar testes de engenharia social:  
 - No terminal, digite: **setoolkit** e pressione a tecla ENTER;
+- *__Nota:__* se aparecer uma mensagem pedindo confirmação, **digite Y** e pressione a tecla ENTER;
 <p>
   <img width="848" height="288" src="images/02-setoolkit.png">
 </p>  
 
-- *__Nota:__* se aparecer uma mensagem pedindo confirmação, **digite Y** e pressione a tecla ENTER;
 - No menu que será exibido, digite **1** e pressione a tecla ENTER. Essa opção seleciona o **Social Engineering Attacks** (ataques de engenharia social);  
 
 <p>
