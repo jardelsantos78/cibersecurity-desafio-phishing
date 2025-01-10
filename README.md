@@ -1,13 +1,13 @@
 # Configurando um ataque phishing no Kali Linux para captura de senhas do Facebook
 
 ## Aviso Importante
-Esse guia é só para aprendizado ou testes autorizados. Fazer isso sem permissão é errado e pode trazer problemas sérios, como processos judiciais.
+Este guia é destinado exclusivamente para fins educacionais ou testes autorizados. A utilização para atividades ilícitas acarretará em sérias consequências legais.
 
 ### Ferramentas necessárias
 
 Para esta simulação, você precisará do sistema operacional abaixo instalado e configurado em um ambiente de teste virtual:
 
-- *Kali Linux*: Sistema operacional especializado em testes de segurança e penetração.
+- *Kali Linux*: Sistema operacional especializado em testes de segurança e penetração (link para download: https://www.kali.org/).
 - *SET Toolkit* (Social-Engineer Toolkit): ferramenta pré-instalada no Kali Linux para engenharia social.
 
 ### Passo a Passo
@@ -15,7 +15,7 @@ Para esta simulação, você precisará do sistema operacional abaixo instalado 
 **1. Ativando o modo administrador (root)**  
 Para realizar o teste, você precisará de acesso de administrador (root) do Kali Linux. Dessa forma, terá as permissões necessárias para executar os comandos:
 - Abra o terminal;
-- Digite: **sudo su** pressione a tecla ENTER e informe a senha (caso seja solicitado).
+- Digite: **sudo su** pressione a tecla ENTER e informe a senha (caso seja solicitado):
 <p>
   <img width="259" height="79" src="images/01-login.png">
 </p>  
@@ -37,7 +37,7 @@ Essa ferramenta open source serve para auxiliar os profissionais de segurança a
 - No próximo menu, selecione o vetor de ataque que refere-se a como o phishing irá funcionar. Para este teste, digite **2** (Web Site Attack Vectors) e pressione a tecla ENTER;
 
 <p>
-  <img width="326" height="346" src="images/04-03-set-option2.png">
+  <img width="326" height="346" src="images/04-set-option2.png">
 </p> 
 
 - No próximo menu, selecione o método de captura que será como o phishing pegará as informações da vítica. Para este teste, digite **3** (Credential Harvester Attack Method) e pressione a tecla ENTER;
@@ -58,7 +58,7 @@ Essa ferramenta open source serve para auxiliar os profissionais de segurança a
   <img width="661" height="319" src="images/07-confirm-ip.png">
 </p> 
 
-- No prompt exibido, digite o site a ser clonado, nesse caso: **http://www.facebook.com** pressione a tecla ENTER. A ferramenta SET Toolkit criará uma cópia do site e começará a capturar as informações das conexões recebidas para este site clonado assim como, os dados de login e senha das pessoas que digitarem na tela de login.
+- No prompt exibido, digite o site a ser clonado, nesse caso: **http://www.facebook.com** pressione a tecla ENTER. A ferramenta SET Toolkit criará uma cópia do site e começará a capturar as informações das conexões recebidas para este site clonado assim como, os dados de login e senha das pessoas que digitarem na tela de login:
 
 <p>
   <img width="553" height="66" src="images/08-enter-url.png">
@@ -67,24 +67,24 @@ Essa ferramenta open source serve para auxiliar os profissionais de segurança a
   <img width="882" height="356" src="images/09-captura-dados.png">
 </p> 
 
-**3. Descobrindo o endereço IP da sua máquina Kali Linux**  
+**3. Descobrindo o endereço IP da sua máquina Kali Linux**
 - Abra um novo terminal;
 - Na tela exibida, digite **ifconfig** e pressione a tecla ENTER;
-- Anote o número que será exibido ao lado de *INET*.
+- Anote o endereço IP que será exibido ao lado de *__INET__*:
 
 <p>
   <img width="663" height="449" src="images/ifconfig.png">
 </p> 
 
 **4. Realizando um teste**  
-- Utilizando outra máquina, abra qualquer navegador (de preferência utilize uma guia anônima) e na barra de endereços digite o endereço IP da sua máquina Kali Linux;
-- Será exibida a "tela de login" do site clonado;
+- Utilizando outra máquina, abra navegador web de sua preferência (recomenda-se utilizar uma guia anônima para os testes) e na barra de endereços digite o endereço IP da sua máquina Kali Linux;
+- Será exibida a "tela de login" do site clonado:
 
 <p>
-  <img src="images/teste-navegador.png">
+  <img width="882" height="541" src="images/teste-navegador.png">
 </p> 
 
-- Neste momento, se consultar o terminal no Kali Linux perceberá que o endereço IP do equipamento que acessou o site clonado será apresentado e as demais informações como login e senha serão capturadas assim que o usuário realizar a tentativa de login no site.
+- Ao consultar o terminal no Kali Linux poderá acompanhar todo o processo de captura desde o endereço IP do equipamento que acessou o site clonado até informações de login e senha:
 
 <p>
   <img width="618" height="387" src="images/captura-dados.png">
