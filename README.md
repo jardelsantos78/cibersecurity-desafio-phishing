@@ -102,3 +102,6 @@ Essa ferramenta open source serve para auxiliar os profissionais de segurança a
 <p>
   <img width="405" height="238" src="images/fechar-setoolkit.png">
 </p> 
+
+### Considerações finais
+As ferramentas de teste de penetração, como o Social-Engineer Toolkit (SET), desempenham um papel crucial na segurança cibernética, mas sua acessibilidade também as torna vulneráveis ao uso indevido por criminosos, possibilitando ataques sofisticados até por iniciantes. Assim, é essencial conscientizar a sociedade sobre essas ameaças, garantindo maior proteção para indivíduos e organizações.
