@@ -1,4 +1,4 @@
-# Configurando um ataque phishing no Kali Linux para captura de senhas do Facebook
+# Projeto: como criar um ataque phishing no Kali Linux para captura de senhas do Facebook
 
 ## Aviso Importante
 Este guia é destinado exclusivamente para fins educacionais ou testes autorizados. A utilização para atividades ilícitas acarretará em sérias consequências legais.
